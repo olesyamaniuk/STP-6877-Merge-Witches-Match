@@ -1,0 +1,7 @@
+.padding--responsive {
+  padding: 60px 20px;
+
+  @media (min-width: 1200px) {
+    padding: 88px;
+  }
+}

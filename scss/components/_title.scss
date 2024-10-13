@@ -1,0 +1,19 @@
+.section--title {
+  font-family: var(--secondary-font);
+  @include font(900, 44px, 48px);
+  margin-bottom: 40px;
+  color: var(--secondary-color);
+  text-shadow: 0px 4px 2px #0dd3ff;
+
+  text-align: center;
+
+  @media (min-width: 1200px) {
+    @include font(900, 52px, 60px);
+    margin-bottom: 60px;
+  }
+}
+
+.title--yellow {
+  color: #fff853;
+  text-shadow: 0px 4px 2px #ff820d;
+}

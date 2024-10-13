@@ -1,0 +1,84 @@
+.gallery {
+  background-image: url('../../images/gallery-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  padding-block: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-block: 88px;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media screen and (min-width: 1200px) {
+      max-width: 1000px;
+    }
+  }
+
+  &__item {
+    cursor: pointer;
+  }
+  
+  &__image {
+    width: 312px;
+    transition: width 0.3s ease;
+  }
+
+  &__button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 56px;
+    margin-top: 40px;
+    @media screen and (min-width: 1200px) {
+      display: none;
+    }
+  }
+
+  &__nav-arrows {
+    @media screen and (min-width: 1200px) {
+      display: none;
+    }
+  }
+}
+
+.slick-active .gallery__image {
+  width: 360px;
+}
+
+.gallery__container {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+  }
+}
+
+.gallery__button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+
+  transition: scale 0.3s ease;
+
+  &:hover {
+    scale: 120%;
+  }
+}
+
+.button-visible {
+  display: none !important;
+  @media screen and (min-width: 1200px) {
+    display: block !important;
+  }
+}
+
+.gallery__button-icon {
+  width: 48px;
+  height: 48px;
+}
