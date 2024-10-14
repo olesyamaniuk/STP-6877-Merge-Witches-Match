@@ -17,3 +17,39 @@ document.addEventListener('DOMContentLoaded', () => {
     })
   );
 });
+
+
+// window.addEventListener('resize', function() {
+//   const advantagesList = document.querySelector('.advantages__list');
+
+//   if (advantagesList) { 
+//     if (window.innerWidth >= 1200) {
+//       advantagesList.classList.remove('advantages__list'); 
+//     } else {
+//       advantagesList.classList.add('advantages__list'); 
+//     }
+//   }
+// });
+
+// window.dispatchEvent(new Event('resize'));
+
+function updateAdvantagesListClass() {
+  const advantagesList = document.querySelector('.advantages__list');
+
+  if (advantagesList) {
+    if (window.innerWidth >= 1200) {
+      advantagesList.classList.remove('advantages__list'); // 
+    } else {
+      if (!advantagesList.classList.contains('advantages__list')) {
+        advantagesList.classList.add('advantages__list'); 
+      }
+    }
+  }
+}
+
+updateAdvantagesListClass();
+
+window.addEventListener('resize', updateAdvantagesListClass);
+
+
+
