@@ -24,22 +24,19 @@
       <nav class="navigation container">
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a href="#home" class="navigation__link">Home</a>
+            <a href="/" class="navigation__link">Home</a>
           </li>
           <li class="navigation__item">
-            <a href="#about" class="navigation__link">About the Game</a>
+            <a href="/#about" class="navigation__link">Advantages</a>
           </li>
           <li class="navigation__item">
-            <a href="#guide" class="navigation__link">How to Play</a>
+            <a href="/#guide" class="navigation__link">User Reviews</a>
           </li>
           <li class="navigation__item">
-            <a href="#features" class="navigation__link">Benefits</a>
+            <a href="/#features" class="navigation__link">About Us</a>
           </li>
           <li class="navigation__item">
-            <a href="#gallery" class="navigation__link">Gallery</a>
-          </li>
-          <li class="navigation__item">
-            <a href="#faq" class="navigation__link">FAQ</a>
+            <a href="/#gallery" class="navigation__link">Gallery</a>
           </li>
         </ul>
 
@@ -257,97 +254,6 @@
         </ul>
       </section>
 
-      <section class="gallery" id="gallery">
-        <h2 class="section--title title--yellow">Gallery</h2>
-
-        <div class="gallery__container">
-          <button class="gallery__button--left gallery__button button-visible">
-            <img
-              class="gallery__button-icon"
-              src="images/arrow-left.png"
-              alt=""
-            />
-          </button>
-
-          <ul data-aos="fade-down" class="gallery__list">
-            <li class="gallery__item">
-              <img
-                class="gallery__image"
-                src="./images/gallery/gallery-1.png"
-                alt=""
-              />
-            </li>
-            <li class="gallery__item">
-              <img
-                class="gallery__image"
-                src="./images/gallery/gallery-2.png"
-                alt=""
-              />
-            </li>
-            <li class="gallery__item">
-              <img
-                class="gallery__image"
-                src="./images/gallery/gallery-3.png"
-                alt=""
-              />
-            </li>
-            <li class="gallery__item">
-              <img
-                class="gallery__image"
-                src="./images/gallery/gallery-4.png"
-                alt=""
-              />
-            </li>
-            <li class="gallery__item">
-              <img
-                class="gallery__image"
-                src="./images/gallery/gallery-5.png"
-                alt=""
-              />
-            </li>
-            <li class="gallery__item">
-              <img
-                class="gallery__image"
-                src="./images/gallery/gallery-6.png"
-                alt=""
-              />
-            </li>
-            <li class="gallery__item">
-              <img
-                class="gallery__image"
-                src="./images/gallery/gallery-7.png"
-                alt=""
-              />
-            </li>
-          </ul>
-
-          <button class="gallery__button--right gallery__button button-visible">
-            <img
-              class="gallery__button-icon"
-              src="images/arrow-right.png"
-              alt=""
-            />
-          </button>
-        </div>
-
-        <div class="gallery__button-container">
-          <button class="gallery__button--left gallery__button">
-            <img
-              class="gallery__button-icon"
-              src="images/arrow-left.png"
-              alt=""
-            />
-          </button>
-          <button class="gallery__button--right gallery__button">
-            <img
-              class="gallery__button-icon"
-              src="images/arrow-right.png"
-              alt=""
-            />
-          </button>
-        </div>
-      </section>
-
       <section class="faq padding--responsive" id="faq">
         <h2 class="section--title faq__title">FAQ</h2>
 
@@ -399,18 +305,92 @@
           </li>
         </ul>
       </section>
+
+      <section class="gallery" id="gallery">
+        <h2 class="section--title visually-hidden">Gallery</h2>
+
+        <div class="gallery__container">
+          <ul data-aos="fade-down" class="gallery__list">
+            <li class="gallery__item">
+              <img
+                class="gallery__image"
+                src="./images/gallery/gallery-1.png"
+                alt=""
+              />
+            </li>
+            <li class="gallery__item">
+              <img
+                class="gallery__image"
+                src="./images/gallery/gallery-2.png"
+                alt=""
+              />
+            </li>
+            <li class="gallery__item">
+              <img
+                class="gallery__image"
+                src="./images/gallery/gallery-3.png"
+                alt=""
+              />
+            </li>
+            <li class="gallery__item">
+              <img
+                class="gallery__image"
+                src="./images/gallery/gallery-4.png"
+                alt=""
+              />
+            </li>
+            <li class="gallery__item">
+              <img
+                class="gallery__image"
+                src="./images/gallery/gallery-5.png"
+                alt=""
+              />
+            </li>
+            <li class="gallery__item">
+              <img
+                class="gallery__image"
+                src="./images/gallery/gallery-6.png"
+                alt=""
+              />
+            </li>
+            <li class="gallery__item">
+              <img
+                class="gallery__image"
+                src="./images/gallery/gallery-7.png"
+                alt=""
+              />
+            </li>
+          </ul>
+        </div>
+
+        <div class="gallery-button-container">
+          <button class="gallery-button gallery-button-left">
+            <img
+              class="gallery-button-icon"
+              src="img/gallery/button.png"
+              alt=""
+            />
+          </button>
+          <button class="gallery-button gallery-button-right">
+            <img
+              class="gallery-button-icon"
+              src="img/gallery/button.png"
+              alt=""
+            />
+          </button>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
-      <div class="footer__container">
-        <div class="footer__wrapper">
-          <a class="footer__text text-1" href="terms.html"
-            >Terms & Conditions</a
-          >
-          <a class="footer__text" href="policy.html">Privacy policy </a>
+      <div class="footer-container">
+        <div class="footer-wrapper">
+          <img src="./img/name.png" alt="name" class="footer-img" />
+          <a class="footer-text" href="policy.html">Privacy policy </a>
+          <a class="footer-text" href="terms.html">Terms and conditions</a>
         </div>
-        <p class="footer__copyright">
-          All rights reserved topjoinpro.com | 2024
+        <p class="footer-copyright">
+          ©2024 ProGameTide.com, All rights reserved.
         </p>
       </div>
     </footer>

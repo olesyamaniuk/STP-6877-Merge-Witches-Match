@@ -10,7 +10,7 @@ $(function () {
     dots: false,
     centerMode: true,
     cssEase: 'linear',
-    prevArrow: '.gallery__button--left',
-    nextArrow: '.gallery__button--right',
+    prevArrow: '.gallery-button-left',
+    nextArrow: '.gallery-button-right',
   });
 });
