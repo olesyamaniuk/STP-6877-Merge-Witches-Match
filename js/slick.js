@@ -27,8 +27,8 @@ $(function () {
     dots: false,
     // centerMode: true,
     cssEase: 'linear',
-    prevArrow: '.gallery-button-left',
-    nextArrow: '.gallery-button-right',
+    prevArrow: '.reviews-button-left',
+    nextArrow: '.reviews-button-right',
   });
 });
 
@@ -44,8 +44,6 @@ $(function () {
     dots: false,
     centerMode: true,
     cssEase: 'linear',
-    prevArrow: '.gallery-button-left',
-    nextArrow: '.gallery-button-right',
   });
 });
 

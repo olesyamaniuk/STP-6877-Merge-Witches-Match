@@ -53,11 +53,6 @@ a {
   cursor: pointer;
 }
 
-.container {
-  /* max-width: 1264px;
-  margin: 0 auto; */
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -139,22 +134,12 @@ a {
   }
 }
 
-.main {
-  padding-top: 60px;
-}
-@media (min-width: 1200px) {
-  .main {
-    padding-top: 64px;
-  }
-}
-/* header */
 .header {
   position: fixed;
   width: 100%;
   z-index: 5;
   -webkit-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
-  /* background-color: var(--accent-color); */
   background-color: transparent;
 }
 .header__background {
@@ -235,7 +220,6 @@ a {
   padding: 48px;
   top: 130px;
   background-color: var(--accent-color);
-  /* width: 375px; */
   border-radius: 0px 0px 20px 20px;
   position: absolute;
   top: 100%;
@@ -262,10 +246,13 @@ a {
   line-height: 40px;
   text-align: center;
 }
-.navigation__link:hover {
+.navigation__link:hover,
+.navigation__link:focus {
+  font-size: 20px;
   font-weight: 900;
-  outline: 2px solid #fff853;
-  border-radius: 100px;
+  line-height: 40px;
+  text-align: center;
+  color: rgba(0, 160, 255, 1);
 }
 
 .header.is-open {
@@ -334,34 +321,25 @@ a {
   }
 }
 
-/* home */
+.main {
+  background-color: var(--accent-color);
+}
 .home {
-  /* background: linear-gradient(180deg, #6ba0fc -50.55%, #3937dc 100%); */
-  background-image: url(/img/main-phone.png);
-  padding-top: 100px;
-  position: relative;
+  background-color: var(--accent-color);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 860px;
+
+  background-image: url("/img/main-phone.png");
 }
 .home-text {
   width: 430px;
   height: 80px;
-  padding-top: 260px;
-  left: 35px;
-  gap: 0px;
-  opacity: 0px;
   font-size: 32px;
   font-style: italic;
   font-weight: 800;
   line-height: 40px;
   text-align: center;
-}
-.home__image-1 {
-  position: absolute;
-  top: 50px;
-  right: 30px;
 }
 
 .home__wrapper {
@@ -387,9 +365,13 @@ a {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  padding-top: 180px;
+  align-items: center;
 }
 .home__image {
-  max-width: 350px;
+  padding-top: 50px 0 0 0 !important;
+  width: 526.15px;
+  height: 405.26px;
   width: 100%;
 }
 .home__title-image {
@@ -409,7 +391,6 @@ a {
 .home__google-button_link {
   display: inline-block;
   max-width: 312px;
-  width: 100%;
   -webkit-transition: -webkit-transform 0.3s ease;
   transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
@@ -417,19 +398,21 @@ a {
   border-radius: 12px;
   -webkit-animation: pulse 2s infinite;
   animation: pulse 2s infinite;
+  width: 264px;
+  height: 66px;
+  padding-top: 24px;
 }
 
 @media screen and (min-width: 1200px) {
   .home {
     padding: 130px 88px 60px 88px;
+    background-image: url("/img/main\ \(4\).png");
+    height: 720px;
   }
-  .home__image-1 {
-    top: 50%;
-    right: 50%;
-    -webkit-transform: translate(50%, -120%);
-    transform: translate(50%, -120%);
-    width: 180px;
+  .home__image-container {
+    display: none;
   }
+
   .home__wrapper {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -441,21 +424,18 @@ a {
     -webkit-box-flex: 1.3;
     -ms-flex: 1.3;
     flex: 1.3;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
+
+    align-items: start;
+    padding-top: 300px;
+    padding-left: 350px;
   }
   .home__image-container {
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
   }
-  .home__image {
-    max-width: none;
-  }
-  .home__title-image {
-    max-width: 507px;
-    margin-bottom: 40px;
+  .home-text {
+    display: none;
   }
 
   .home__google-button_link {
@@ -463,7 +443,6 @@ a {
   }
 }
 
-/* advantages */
 .advantages {
   background-repeat: no-repeat;
   background-size: cover;
@@ -474,7 +453,6 @@ a {
   padding-bottom: 100px;
   height: 800px;
   background-image: url("/img/advantages/Advantages-phone.png");
-  /* background: linear-gradient(180deg, #ffffff 0%, #00a1ff 100%); */
 }
 
 .advantages-title {
@@ -523,6 +501,9 @@ a {
   justify-content: center;
   padding-top: 20px;
 }
+.advantages-list {
+  display: none;
+}
 @media screen and (min-width: 1200px) {
   .advantages {
     background-repeat: no-repeat;
@@ -532,15 +513,11 @@ a {
     background-color: var(--accent-color);
     padding-top: 63px;
     padding-bottom: 100px;
-    /* height: 740px; */
     background-image: url("/img/advantages//Advantages\ \(3\).png");
     height: 820px;
   }
 
   .advantages__container {
-    /* height: 5000px; */
-    /* width: 1200px; */
-
     margin: auto;
   }
   .advantages-title {
@@ -552,6 +529,18 @@ a {
     color: rgba(255, 255, 255, 1);
   }
 
+  .advantages__list {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    row-gap: -100px;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 48px;
+    max-width: 938px;
+    padding-bottom: 20px;
+    display: none;
+  }
   .advantages-list {
     display: flex;
     justify-content: center;
@@ -569,7 +558,6 @@ a {
   }
 }
 
-/* reviews */
 .reviews {
   background-repeat: no-repeat;
   background-size: cover;
@@ -743,7 +731,6 @@ a {
   }
 }
 
-/* gallery */
 .gallery {
   background-repeat: no-repeat;
   background-size: cover;
@@ -816,7 +803,7 @@ a {
     padding-bottom: 65px;
   }
   .gallery__list {
-    max-width: 1920px;
+    max-width: 1200px;
   }
 
   .gallery__nav-arrows {
@@ -844,7 +831,13 @@ a {
     margin-top: 59px;
   }
 }
-/* about */
+
+@media screen and (min-width: 1919px) {
+  .gallery__list {
+    max-width: 1920px;
+  }
+}
+
 .about {
   background-image: url("/img/about/about-phone.png");
   background-repeat: no-repeat;
@@ -868,7 +861,6 @@ a {
   align-items: start;
 }
 .about__title {
-  /* width: 245px; */
   font-size: 48px;
   font-weight: 900;
   line-height: 40px;
@@ -940,13 +932,12 @@ a {
   }
 }
 
-/* footer */
 .footer {
   background-image: url("../img/footer/footerandname.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  /* height: 726px; */
+
   margin: auto;
 }
 .footer-container {
@@ -955,6 +946,7 @@ a {
   justify-content: center;
   align-items: center;
   padding-top: 533px;
+  padding-bottom: 100px;
 }
 .footer-wrapper {
   display: flex;
@@ -995,7 +987,6 @@ a {
 
 @media screen and (min-width: 1200px) {
   .footer {
-    /* height: 492px; */
   }
   .footer-container {
     padding-top: 106px;
@@ -1027,7 +1018,6 @@ a {
   }
 }
 
-/* policy// terms */
 .back {
   background-color: var(--accent-color);
   padding-bottom: 30px;

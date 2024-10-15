@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Triple Match Adventure</title>
-    <link rel="icon" href="images/favicon.jpg" />
+    <title>Merge Witches</title>
+    <link rel="icon" href="img/image.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -27,13 +27,13 @@
             <a href="/" class="navigation__link">Home</a>
           </li>
           <li class="navigation__item">
-            <a href="/#about" class="navigation__link">Advantages</a>
+            <a href="/#advantages" class="navigation__link">Advantages</a>
           </li>
           <li class="navigation__item">
-            <a href="/#guide" class="navigation__link">User Reviews</a>
+            <a href="/#reviews" class="navigation__link">User Reviews</a>
           </li>
           <li class="navigation__item">
-            <a href="/#features" class="navigation__link">About Us</a>
+            <a href="/#about" class="navigation__link">About Us</a>
           </li>
           <li class="navigation__item">
             <a href="/#gallery" class="navigation__link">Gallery</a>
@@ -43,20 +43,18 @@
         <div class="header__button-wrapper">
           <button type="button" class="header__icon-button" data-menu-button>
             <svg class="header__icon header__icon--menu">
-              <use href="./images/sprite.svg#icon-menu"></use>
+              <use href="./img/sprite.svg#icon-menu"></use>
             </svg>
             <svg class="header__icon header__icon--close">
-              <use href="./images/sprite.svg#icon-cancel"></use>
+              <use href="./img/sprite.svg#icon-cancel"></use>
             </svg>
           </button>
         </div>
       </nav>
     </header>
 
-    <main>
-      <section class="home padding--responsive" id="home">
-        <img class="home__image-1" src="images/hero-1.png" alt="" />
-
+    <main class="main">
+      <section class="home" id="home">
         <div class="home__wrapper container">
           <div class="home__container-top">
             <img class="home__title-image" src="images/title.png" alt="" />
@@ -64,7 +62,7 @@
 
             <a
               class="home__google-button_link button-home"
-              href="https://play.google.com/store/apps/details?id=com.tile.triplematch.matching"
+              href="https://play.google.com/store/apps/details?id=com.wjoy.witch"
               target="_blank"
             >
               <img
@@ -84,7 +82,7 @@
         <h2 class="advantages-title">Advantages</h2>
 
         <div class="advantages__container">
-          <ul data-aos="fade-down" class="advantages__list advantages-list">
+          <ul data-aos="fade-down" class="advantages__list">
             <li class="advantages__item">
               <div class="advantages-avatar-info">
                 <img
@@ -162,7 +160,7 @@
           </ul>
           <a
             class="advantages-button-link button-advantages"
-            href="https://play.google.com/store/apps/details?id=com.tile.triplematch.matching"
+            href="https://play.google.com/store/apps/details?id=com.wjoy.witch"
             target="_blank"
           >
             <img
@@ -172,6 +170,83 @@
             />
           </a>
         </div>
+
+        <ul data-aos="fade-down" class="advantages-list">
+          <li class="advantages__item">
+            <div class="advantages-avatar-info">
+              <img
+                class="advantages-avatar"
+                src="./img/advantages/adv-1.png"
+                alt="User Avatar"
+              />
+            </div>
+            <div class="advantages-content">
+              <p class="advantages-quote">
+                Engaging Puzzles: Solve a variety of challenging magic-themed
+                puzzles.
+              </p>
+            </div>
+          </li>
+          <li class="advantages__item">
+            <div class="advantages-avatar-info">
+              <img
+                class="advantages-avatar"
+                src="./img/advantages/adv-2.png"
+                alt="User Avatar"
+              />
+            </div>
+            <div class="advantages-content">
+              <p class="advantages-quote">
+                Magical Atmosphere: Stunning visuals and enchanting sound
+                effects create an immersive magical world.
+              </p>
+            </div>
+          </li>
+          <li class="advantages__item">
+            <div class="advantages-avatar-info">
+              <img
+                class="advantages-avatar"
+                src="./img/advantages/adv-3.png"
+                alt="User Avatar"
+              />
+            </div>
+            <div class="advantages-content">
+              <p class="advantages-quote">
+                Unique Characters: Meet a cast of magical witches and wizards as
+                you progress.
+              </p>
+            </div>
+          </li>
+          <li class="advantages__item">
+            <div class="advantages-avatar-info">
+              <img
+                class="advantages-avatar"
+                src="./img/advantages/adv-4.png"
+                alt="User Avatar"
+              />
+            </div>
+            <div class="advantages-content">
+              <p class="advantages-quote">
+                Regular Updates: New levels, spells, and events keep the game
+                fresh and exciting.
+              </p>
+            </div>
+          </li>
+          <li class="advantages__item">
+            <div class="advantages-avatar-info">
+              <img
+                class="advantages-avatar"
+                src="./img/advantages/adv-5.png"
+                alt="User Avatar"
+              />
+            </div>
+            <div class="advantages-content">
+              <p class="advantages-quote">
+                Offline Mode: Enjoy the game without an internet connection.
+              </p>
+            </div>
+          </li>
+        </ul>
       </section>
 
       <section class="reviews" id="reviews">
@@ -201,12 +276,11 @@
                   src="./img/reviews/image.png"
                   alt="User Avatar"
                 />
-                <h3 class="reviews-name">SpellCaster:</h3>
+                <h3 class="reviews-name">MagicLover:</h3>
               </div>
               <div class="reviews-content">
                 <p class="reviews-quote">
-                  Addictive gameplay and beautiful graphics. I can't put it
-                  down!
+                  The puzzles are challenging, but the power-ups help a lot!
                 </p>
               </div>
             </li>
@@ -217,12 +291,12 @@
                   src="./img/reviews/image.png"
                   alt="User Avatar"
                 />
-                <h3 class="reviews-name">SpellCaster:</h3>
+                <h3 class="reviews-name">WitchMaster:</h3>
               </div>
               <div class="reviews-content">
                 <p class="reviews-quote">
-                  Addictive gameplay and beautiful graphics. I can't put it
-                  down!
+                  One of the best puzzle games I've played. Love the magical
+                  theme.
                 </p>
               </div>
             </li>
@@ -233,12 +307,12 @@
                   src="./img/reviews/image.png"
                   alt="User Avatar"
                 />
-                <h3 class="reviews-name">SpellCaster:</h3>
+                <h3 class="reviews-name">EnchantingWizard:</h3>
               </div>
               <div class="reviews-content">
                 <p class="reviews-quote">
-                  Addictive gameplay and beautiful graphics. I can't put it
-                  down!
+                  The daily rewards keep me engaged, and I love the variety of
+                  levels.
                 </p>
               </div>
             </li>
@@ -246,14 +320,14 @@
         </div>
 
         <div class="reviews-button-container">
-          <button class="gallery-button gallery-button-left">
+          <button class="gallery-button reviews-button-left">
             <img
               class="gallery-button-icon"
               src="img/gallery/button.png"
               alt=""
             />
           </button>
-          <button class="gallery-button gallery-button-right">
+          <button class="gallery-button reviews-button-right">
             <img
               class="gallery-button-icon"
               src="img/gallery/button.png"
@@ -277,10 +351,13 @@
               treasures.
             </p>
           </div>
-
-          <div class="about__image-wrapper">
-            <img class="about-image" src="img/button.png" alt="" />
-          </div>
+          <a
+            class="about__image-wrapper"
+            href="https://play.google.com/store/apps/details?id=com.wjoy.witch"
+            target="_blank"
+          >
+            <img class="about-image" src="./img/button.png" alt="" />
+          </a>
         </div>
       </section>
 
